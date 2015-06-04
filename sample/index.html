@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Tickr</title>
+    <style>
+      ul, li {list-style-type: none;}
+    </style>
+  </head>
+  <body>
+    <ul class="news" id="news">
+      <li>テストテキスト - 1</li>
+      <li>テストテキスト - 2</li>
+      <li>テストテキスト - 3</li>
+      <li>テストテキスト - 4</li>
+      <li>テストテキスト - 5</li>
+    </ul>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../jquery.tickr.js"></script>
+    <script>
+      $(function() {
+        $('#news').tickr();
+      });
+    </script>
+  </body>
+</html>
